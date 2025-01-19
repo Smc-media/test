@@ -628,78 +628,78 @@
     }
 
 
+.faq-section {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #4c4c4c;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #fb6107;
+}
+
+.faq-section p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+    max-height: 50px; /* Hide the answer box initially */
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    cursor: pointer; /* Change cursor to indicate clickable area */
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle; /* Align the heading with the icon */
+    color: #ffffff;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: -15px; /* Move the icon above the FAQ item */
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Rotate the icon when the FAQ item is open */
+.faq-item.open .toggle-icon {
+    transform: rotate(45deg); /* Cross icon (rotate) */
+}
+
+.answer {
+    display: none; /* Initially hide the answer */
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.faq-item.open {
+    max-height: 200px; /* Expand height when open */
+}
+
+.faq-item.open .answer {
+    display: block; /* Show the answer when open */
+}
 
 
-    .faq-section {
-            border: 1px solid rgb(255, 255, 255);
-            padding: 20px;
-            width: 80%;
-            margin: auto;
-            margin-top: 100px;
-            background-color: #4c4c4c;
-        }
-
-        .faq-section h2 {
-            text-align: center;
-            font-size: 24px;
-            color: #fb6107;
-        }
-
-        .faq-section p {
-            text-align: center;
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #ffffff;
-            margin-bottom: 15px;
-            padding: 10px;
-            position: relative;
-            overflow: hidden;
-            max-height: 50px; /* Hide the answer box initially */
-            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-            cursor: pointer; /* Change cursor to indicate clickable area */
-        }
-
-        .faq-item h3 {
-            font-size: 18px;
-            margin: 0;
-            cursor: pointer;
-            display: inline-block;
-            vertical-align: middle; /* Align the heading with the icon */
-            color: #ffffff;
-        }
-
-        .toggle-icon {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%); /* Vertically align the icon */
-            font-size: 20px;
-            cursor: pointer;
-            color: #ffffff;
-        }
-
-        .answer {
-            display: none; /* Initially hide the answer */
-            margin-top: 10px;
-            color: #ffffff;
-        }
-
-        .faq-item.open {
-            max-height: 200px; /* Expand height when open */
-        }
-
-        .faq-item.open .answer {
-            display: block; /* Show the answer when open */
-        }
-
-        .faq-item.open .toggle-icon {
-            content: '×'; /* Change to a cross icon when open */
-        }
-
+   
         .contact-us {
     display: flex;
     justify-content: center;
